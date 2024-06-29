@@ -1,13 +1,15 @@
 "use strict"
 
+import "./pokecard.css"
+
 /** PokeCard react object */
 
 const PokeCard = ({name, image, types, exp}) => {
-    return (<div classname="PokeCard">
-        <span classname="PokeCard-name">{name}</span>
+    return (<div className="PokeCard">
+        <span className="PokeCard-name">{name}</span>
         <img src={image} />
-        <span classname="PokeCard-type">Type: {types.join("/")}</span>
-        <span classname="PokeCard-exp">EXP: {exp}</span>
+        <div className="PokeCard-type">Type: {types.join("/")}</div>
+        <span className="PokeCard-exp">EXP: {exp}</span>
     </div>)
 }
 
